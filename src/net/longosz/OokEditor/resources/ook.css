@@ -1,0 +1,19 @@
+.moveptr {
+    -fx-fill: purple;
+    -fx-font-weight: bold;
+}
+.incrdecr {
+    -fx-fill: darkred;
+    -fx-font-weight: bold;
+}
+.io {
+    -fx-fill: cornflowerblue;
+    -fx-font-weight: bold;
+}
+.jump {
+    -fx-fill: green;
+    -fx-font-weight: bold;
+}
+.comment {
+    -fx-fill: cadetblue;
+}

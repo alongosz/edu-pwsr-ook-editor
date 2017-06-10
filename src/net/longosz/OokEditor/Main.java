@@ -15,7 +15,10 @@ public class Main extends Application {
         CodeArea codeArea = new CodeArea();
         codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
 
+        Controller controller = new Controller(codeArea);
+        controller.watchForChanges();
         Scene scene = new Scene(new StackPane(codeArea), 600, 400);
+        scene.getStylesheets().add(getClass().getResource("/net/longosz/OokEditor/resources/ook.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setTitle("Ook! Editor");
         primaryStage.show();
